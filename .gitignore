@@ -1,0 +1,10 @@
+*.db
+*.suo
+*.opendb
+*.user
+bin/
+lib/
+ipch/
+DuiLib/Debug/
+DuiLib/Build/
+DuiLib_ControlEx/Debug/

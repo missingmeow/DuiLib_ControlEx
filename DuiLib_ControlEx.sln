@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib_ControlEx", "DuiLib_ControlEx\DuiLib_ControlEx.vcxproj", "{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E} = {E106ACD7-4E53-4AEE-942B-D0DD426DB34E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib", "DuiLib\DuiLib.vcxproj", "{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		UnicodeDebug|ARM = UnicodeDebug|ARM
+		UnicodeDebug|x64 = UnicodeDebug|x64
+		UnicodeDebug|x86 = UnicodeDebug|x86
+		UnicodeRelease|ARM = UnicodeRelease|ARM
+		UnicodeRelease|x64 = UnicodeRelease|x64
+		UnicodeRelease|x86 = UnicodeRelease|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Debug|ARM.ActiveCfg = Debug|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Debug|ARM.Build.0 = Debug|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Debug|x64.ActiveCfg = Debug|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Debug|x64.Build.0 = Debug|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Debug|x86.ActiveCfg = Debug|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Debug|x86.Build.0 = Debug|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Release|ARM.ActiveCfg = Release|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Release|x64.ActiveCfg = Release|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Release|x64.Build.0 = Release|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Release|x86.ActiveCfg = Release|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.Release|x86.Build.0 = Release|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeDebug|ARM.ActiveCfg = Release|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeDebug|ARM.Build.0 = Release|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeDebug|x64.ActiveCfg = Debug|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeDebug|x64.Build.0 = Debug|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeDebug|x86.ActiveCfg = Debug|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeDebug|x86.Build.0 = Debug|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeRelease|ARM.ActiveCfg = Release|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeRelease|ARM.Build.0 = Release|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeRelease|x64.ActiveCfg = Release|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeRelease|x64.Build.0 = Release|x64
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeRelease|x86.ActiveCfg = Release|Win32
+		{99DBBE5C-FFE3-4E8F-845B-1C2612C2F298}.UnicodeRelease|x86.Build.0 = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|ARM.ActiveCfg = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|ARM.Build.0 = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|x64.ActiveCfg = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|x86.ActiveCfg = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|x86.Build.0 = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|ARM.ActiveCfg = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x64.ActiveCfg = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x86.ActiveCfg = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x86.Build.0 = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|ARM.ActiveCfg = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x64.ActiveCfg = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x86.ActiveCfg = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x86.Build.0 = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|ARM.ActiveCfg = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x64.ActiveCfg = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x86.ActiveCfg = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x86.Build.0 = UnicodeRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
