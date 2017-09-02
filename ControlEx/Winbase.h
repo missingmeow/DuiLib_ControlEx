@@ -1,6 +1,5 @@
 #pragma once
-
-#include "../DuiLib_ControlEx/stdafx.h"
+#include "stdafx.h"
 
 class WinBase : public WindowImplBase
 {
