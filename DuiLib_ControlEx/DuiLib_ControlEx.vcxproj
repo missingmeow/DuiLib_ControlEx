@@ -160,10 +160,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\ControlEx\Winbase.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\ControlEx\Winbase.h" />
     <ClInclude Include="MainFrame.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>

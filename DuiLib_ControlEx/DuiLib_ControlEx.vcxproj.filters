@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ControlEx">
+      <UniqueIdentifier>{88de0563-3e2d-4afb-9ab8-47dbf4023088}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,6 +24,9 @@
     <ClCompile Include="MainFrame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\ControlEx\Winbase.cpp">
+      <Filter>ControlEx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -28,6 +34,9 @@
     </ClInclude>
     <ClInclude Include="MainFrame.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ControlEx\Winbase.h">
+      <Filter>ControlEx</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -15,11 +15,6 @@ CDuiString CMainFrame::GetSkinFile()
     return _T("main.xml");
 }
 
-CDuiString CMainFrame::GetSkinFolder()
-{
-    return _T("");
-}
-
 LPCTSTR CMainFrame::GetWindowClassName(void) const
 {
     return _T("MainFrame");

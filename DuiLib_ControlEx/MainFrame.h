@@ -1,13 +1,12 @@
 #pragma once
-#include "stdafx.h"
+#include "../ControlEx/Winbase.h"
 
-class CMainFrame : public WindowImplBase
+class CMainFrame : public WinBase
 {
 public:
     CMainFrame();
     ~CMainFrame();
 
-    virtual CDuiString GetSkinFolder();
     virtual CDuiString GetSkinFile();
     virtual LPCTSTR GetWindowClassName(void) const;
 
