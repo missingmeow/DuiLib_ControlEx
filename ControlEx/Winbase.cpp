@@ -1,4 +1,5 @@
 #include "Winbase.h"
+#include "UICircleProgress.h"
 
 WinBase::WinBase()
 {
@@ -17,6 +18,8 @@ CDuiString WinBase::GetSkinFolder()
 
 CControlUI* WinBase::CreateControl(LPCTSTR pstrClass)
 {
+    if (_tcscmp(pstrClass, DUI_CTR_CIRCLEPROGRESS) == 0)
+        return new CCirecleProgressUI();
     return __super::CreateControl(pstrClass);
 }
 

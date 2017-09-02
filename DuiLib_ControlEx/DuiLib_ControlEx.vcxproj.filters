@@ -27,6 +27,9 @@
     <ClCompile Include="..\ControlEx\Winbase.cpp">
       <Filter>ControlEx</Filter>
     </ClCompile>
+    <ClCompile Include="..\ControlEx\UICircleProgress.cpp">
+      <Filter>ControlEx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\ControlEx\Winbase.h">
+      <Filter>ControlEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ControlEx\UICircleProgress.h">
       <Filter>ControlEx</Filter>
     </ClInclude>
   </ItemGroup>

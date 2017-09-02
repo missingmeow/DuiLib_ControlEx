@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Window size="500,400" mininfo="500,400" caption="0,0,0,32" sizebox="4,4,4,4">
+<Window size="800,600" mininfo="500,400" caption="0,0,0,32" sizebox="4,4,4,4">
     <Font id="0" name="微软雅黑" size="14" default="true"/>
     <Font id="1" name="微软雅黑" size="12"/>
     <Default name="VScrollBar" value="button1normalimage=&quot;file='scroll.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scroll.png' source='0,16,16,32' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scroll.png' source='0,48,16,64' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;ffile='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scroll.png' source='0,96,16,112' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
@@ -7,7 +7,7 @@
     <VerticalLayout bkcolor="#FFF0F0F0" bkcolor2="#FFAAAAA0">
         <!-- 标题栏区 -->
         <HorizontalLayout height="32" bkcolor="#FFE6E6DC" bkcolor2="#FFAAAAA0">
-            <Control />
+            <Label text="DuiLib ControlEx" padding="10,0,0,0"/>
             <VerticalLayout width="77">
                 <!-- 右边三个控件所占的宽度-->
                 <Button name="minbtn"   tooltip="最小化" float="true" pos="0,5,22,24"  width="23" normalimage="MinNormal.bmp" hotimage="MinFocus.bmp" pushedimage="MinFocus.bmp"/>
@@ -18,8 +18,46 @@
         </HorizontalLayout>
 
         <!-- 客户区 -->
-        <VerticalLayout>
-            <Label text="Hello World!"/>
-        </VerticalLayout>
+        <HorizontalLayout>
+            <HorizontalLayout sepimm="true" sepwidth="3" inset="0,0,3,0" bkcolor="#FFF2E1C2" bkcolor2="#FFD9B6C0" width="165" minwidth="120" maxwidth="400">
+                <VerticalLayout vscrollbar="true" padding="0,30,0,30">
+                    <Option name="circle_progress_tab" text="扇环圆环进度条" height="30" group="tab" hottextcolor="#FF8C7B65" selectedtextcolor="#FFD9A796" selected="true"/>
+                    <Option name="test_tab" text="测试" height="30" group="tab" hottextcolor="#FF8C7B65" selectedtextcolor="#FFD9A796"/>
+                </VerticalLayout>
+            </HorizontalLayout>
+            <TabLayout name="tab_switch" padding="20,15,20,15">
+                <VerticalLayout name="circle_progress_tab_panel">
+                    <Label text="说明：" padding="0,5,10,0"/>
+                    <RichEdit bordersize="1" bordercolor="#FFAAA4A0" vscrollbar="true" textpadding="10,5,10,5" inset="1,1,1,1" text="CircleProgress : Progress
+forecolor : 0x00000000 : DWORD : 进度条显示的颜色
+radius : 0 : INT : 圆的半径（纯色情况下）
+innerradius : 0 : INT : 圆环的内径（纯色情况下）
+angle : 0 : INT : 进度条的起始位置（0-360）12点方向
+originalangle : 0 : FLOAT : foreimage初始角度，小于这个角度图片不旋转
+说明：此控件主要参考 https://github.com/qdtroy/DuiLib_Ultimate，当然，此控件还有很多不足的地方，比如纯色情况下会有锯齿，影响美观。图片模式下是通过多次旋转绘画达到进度条的效果，如有更好的做法欢迎交流。"/>
+                    <Label text="效果：" padding="0,5,10,0"/>
+                    <VerticalLayout bordersize="1" bordercolor="#FFA0A0A0" vscrollbar="true" inset="1,1,1,1">
+                        <Control />
+                        <HorizontalLayout height="105">
+                            <CircleProgress name="cp0" width="100" height="100" foreimage="ring.png" forecolor="#64AAFF88" originalangle="18" radius="30" value="100" text="100%" textpadding="0,40,0,0"/>
+                            <CircleProgress name="cp1" minwidth="100" height="100" bkcolor="#FFFFBBAA" forecolor="#FFFFAA88" value="30" text="30%" textpadding="0,40,0,0" angle="90"/>
+                            <CircleProgress name="cp2" minwidth="100" height="100" forecolor="#862299AA" innerradius="15" value="15" text="15%" textpadding="0,40,0,0"/>
+                            <CircleProgress name="cp3" minwidth="100" height="100" bkcolor="#86221188" forecolor="#862299AA" innerradius="15" value="0" text="0%" textpadding="0,40,0,0" angle="180"/>
+                            <Button name="start_progress" text="点击测试" width="100" bkcolor="#FFA9A9DC" bkcolor2="#FF9898AA"/>
+                            <Button name="stop_progress" text="停止" width="100" bkcolor="#FFA9A9DC" bkcolor2="#FF9898AA" visible="false" />
+                        </HorizontalLayout>
+                        <Control />
+                    </VerticalLayout>
+                </VerticalLayout>
+
+                <VerticalLayout name="test_tab_panel">
+                    <Label text="说明：" padding="0,5,10,0"/>
+                    <RichEdit bordersize="1" bordercolor="#FFAAA4A0" vscrollbar="true" textpadding="10,5,10,5" inset="1,1,1,1" text="这是测试页面"/>
+                    <Label text="效果：" padding="0,5,10,0"/>
+                    <HorizontalLayout bordersize="1" bordercolor="#FFA0A0A0" vscrollbar="true" inset="1,1,1,1">
+                    </HorizontalLayout>
+                </VerticalLayout>
+            </TabLayout>
+        </HorizontalLayout>
     </VerticalLayout>
 </Window>
