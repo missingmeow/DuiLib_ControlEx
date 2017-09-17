@@ -13,7 +13,7 @@ public:
     virtual void InitWindow();
     virtual void OnClick(TNotifyUI& msg);
     virtual void Notify(TNotifyUI& msg);
-    virtual LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam);
+    virtual LRESULT HandleCustomMessage(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled);
 
     DUI_DECLARE_MESSAGE_MAP()
     virtual void OnSelectChanged(TNotifyUI &msg);

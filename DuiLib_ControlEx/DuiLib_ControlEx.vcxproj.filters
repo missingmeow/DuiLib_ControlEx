@@ -30,6 +30,12 @@
     <ClCompile Include="..\ControlEx\UICircleProgress.cpp">
       <Filter>ControlEx</Filter>
     </ClCompile>
+    <ClCompile Include="..\ControlEx\FloatWinBase.cpp">
+      <Filter>ControlEx</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -44,9 +50,18 @@
     <ClInclude Include="..\ControlEx\UICircleProgress.h">
       <Filter>ControlEx</Filter>
     </ClInclude>
+    <ClInclude Include="..\ControlEx\FloatWinBase.h">
+      <Filter>ControlEx</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\skin\main.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="..\skin\float.xml">
       <Filter>Resource Files</Filter>
     </Xml>
   </ItemGroup>

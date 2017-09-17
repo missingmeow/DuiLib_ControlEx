@@ -13,5 +13,6 @@ public:
 
     virtual CControlUI* CreateControl(LPCTSTR pstrClass);
 
+    virtual void OnFinalMessage(HWND hWnd);
     virtual LRESULT OnDestroy(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& bHandled);
 };

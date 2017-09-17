@@ -22,7 +22,7 @@
             <HorizontalLayout sepimm="true" sepwidth="3" inset="0,0,3,0" bkcolor="#FFF2E1C2" bkcolor2="#FFD9B6C0" width="165" minwidth="120" maxwidth="400">
                 <VerticalLayout vscrollbar="true" padding="0,30,0,30">
                     <Option name="circle_progress_tab" text="扇环圆环进度条" height="30" group="tab" hottextcolor="#FF8C7B65" selectedtextcolor="#FFD9A796" selected="true"/>
-                    <Option name="test_tab" text="测试" height="30" group="tab" hottextcolor="#FF8C7B65" selectedtextcolor="#FFD9A796"/>
+                    <Option name="float_form_tab" text="浮窗显示" height="30" group="tab" hottextcolor="#FF8C7B65" selectedtextcolor="#FFD9A796"/>
                 </VerticalLayout>
             </HorizontalLayout>
             <TabLayout name="tab_switch" padding="20,15,20,15">
@@ -44,17 +44,32 @@ originalangle : 0 : FLOAT : foreimage初始角度，小于这个角度图片不�
                             <CircleProgress name="cp2" minwidth="100" height="100" forecolor="#862299AA" innerradius="15" value="15" text="15%" textpadding="0,40,0,0"/>
                             <CircleProgress name="cp3" minwidth="100" height="100" bkcolor="#86221188" forecolor="#862299AA" innerradius="15" value="0" text="0%" textpadding="0,40,0,0" angle="180"/>
                             <Button name="start_progress" text="点击测试" width="100" bkcolor="#FFA9A9DC" bkcolor2="#FF9898AA"/>
-                            <Button name="stop_progress" text="停止" width="100" bkcolor="#FFA9A9DC" bkcolor2="#FF9898AA" visible="false" />
+                            <Button name="stop_progress" text="停止" width="100" bkcolor="#FFA9A9DC" bkcolor2="#FF9898AA" visible="false"/>
                         </HorizontalLayout>
                         <Control />
                     </VerticalLayout>
                 </VerticalLayout>
 
-                <VerticalLayout name="test_tab_panel">
+                <VerticalLayout name="float_form_tab_panel">
                     <Label text="说明：" padding="0,5,10,0"/>
-                    <RichEdit bordersize="1" bordercolor="#FFAAA4A0" vscrollbar="true" textpadding="10,5,10,5" inset="1,1,1,1" text="这是测试页面"/>
+                    <RichEdit bordersize="1" bordercolor="#FFAAA4A0" vscrollbar="true" textpadding="10,5,10,5" inset="1,1,1,1" text="浮窗是为了显示更多内容时以类似菜单的方式弹出一个小窗口显示。
+PS：这个功能其实也不算功能吧，只是经常碰到需要用的地方，于是就简单的做了下，希望以后再使用的时候可以方便点吧。"/>
                     <Label text="效果：" padding="0,5,10,0"/>
                     <HorizontalLayout bordersize="1" bordercolor="#FFA0A0A0" vscrollbar="true" inset="1,1,1,1">
+                        <Control width="20" />
+                        <VerticalLayout width="100">
+                            <Control />
+                            <Button name="float_form_btn" height="24" text="点击测试" bkcolor="#FFA9A9DC" bkcolor2="#FF9898AA"/>
+                            <Control />
+                        </VerticalLayout>
+                        <Control width="20" />
+                        <List name="listview" vscrollbar="true" hscrollbar="true" itemvalign="vcenter" bordersize="1" bordercolor="#FFA0A0A0" inset="1,1,1,1" padding="20,20,20,20" bkcolor="#FFFFFFFF" itemendellipsis="true">
+                            <ListHeader height="24" menu="true" bkimage="header_bk.png">
+                                <ListHeaderItem name="header_name" text="序号" width="60" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+                                <ListHeaderItem text="标题" width="80" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+                                <ListHeaderItem text="内容" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+                            </ListHeader>
+                        </List>
                     </HorizontalLayout>
                 </VerticalLayout>
             </TabLayout>

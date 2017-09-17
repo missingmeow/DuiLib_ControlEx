@@ -72,7 +72,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)$(SolutionName)\</IncludePath>
+    <IncludePath>$(SolutionDir)DuiLib;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)$(SolutionName)\</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -161,18 +161,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\ControlEx\FloatWinBase.cpp" />
     <ClCompile Include="..\ControlEx\UICircleProgress.cpp" />
     <ClCompile Include="..\ControlEx\Winbase.cpp" />
+    <ClCompile Include="FloatForm.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\ControlEx\FloatWinBase.h" />
     <ClInclude Include="..\ControlEx\UICircleProgress.h" />
     <ClInclude Include="..\ControlEx\Winbase.h" />
+    <ClInclude Include="FloatForm.h" />
     <ClInclude Include="MainFrame.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <Xml Include="..\skin\float.xml" />
     <Xml Include="..\skin\main.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

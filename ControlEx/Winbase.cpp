@@ -23,10 +23,14 @@ CControlUI* WinBase::CreateControl(LPCTSTR pstrClass)
     return __super::CreateControl(pstrClass);
 }
 
+void WinBase::OnFinalMessage(HWND hWnd)
+{
+    __super::OnFinalMessage(hWnd);
+    delete this;
+}
+
 LRESULT WinBase::OnDestroy(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& bHandled)
 {
-    PostQuitMessage(0L);
-
     bHandled = FALSE;
     return 0;
 }
